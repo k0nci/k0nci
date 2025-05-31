@@ -1,0 +1,28 @@
+import React from 'react';
+import { type SocialLink } from '../../types';
+
+interface SocialLinksProps {
+  links: SocialLink[];
+}
+
+const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => (
+  <div className="flex justify-center gap-12">
+    {links.map((link) => {
+      const IconComponent = link.icon;
+      return (
+        <a
+          key={link.title}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={link.title}
+          className="text-white/80 transition-all duration-300 hover:-translate-y-2 hover:text-white hover:drop-shadow-lg"
+        >
+          <IconComponent size={32} />
+        </a>
+      );
+    })}
+  </div>
+);
+
+export default SocialLinks;
