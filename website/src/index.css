@@ -14,10 +14,20 @@
 @keyframes auroraShift {
   0%,
   100% {
+    opacity: 0.3;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(1);
+  }
+  25% {
     opacity: 0.8;
+    transform: translateX(-30%) translateY(-60%) rotate(90deg) scale(1.1);
   }
   50% {
-    opacity: 1;
+    opacity: 0.6;
+    transform: translateX(-70%) translateY(-40%) rotate(180deg) scale(0.9);
+  }
+  75% {
+    opacity: 0.9;
+    transform: translateX(-40%) translateY(-70%) rotate(270deg) scale(1.2);
   }
 }
 
@@ -33,18 +43,6 @@
   }
 }
 
-.animate-twinkle {
-  animation: twinkle 3s ease-in-out infinite;
-}
-
 .animate-fadeInUp {
   animation: fadeInUp 1.8s ease-out;
-}
-
-.text-shadow {
-  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-}
-
-.text-shadow-lg {
-  text-shadow: 2px 2px 25px rgba(0, 0, 0, 0.4);
 }

@@ -14,12 +14,15 @@ const TwinklingStars: React.FC = () => {
       {stars.map((star, index) => (
         <div
           key={index}
-          className={`absolute ${star.size} animate-twinkle rounded-full bg-white/80`}
+          className={`absolute ${star.size} rounded-full bg-white/80`}
           style={{
             top: star.top,
             left: star.left,
+            animationName: 'twinkle',
             animationDelay: star.delay,
             animationDuration: '3s',
+            animationTimingFunction: 'ease-in-out',
+            animationIterationCount: 'infinite',
           }}
         />
       ))}

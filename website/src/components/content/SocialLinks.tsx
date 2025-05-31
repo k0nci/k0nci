@@ -3,10 +3,11 @@ import { type SocialLink } from '../../types';
 
 interface SocialLinksProps {
   links: SocialLink[];
+  className?: string;
 }
 
-const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => (
-  <div className="flex justify-center gap-12">
+const SocialLinks: React.FC<SocialLinksProps> = ({ links, className = '' }) => (
+  <div className={`${className} flex justify-center gap-12`}>
     {links.map((link) => {
       const IconComponent = link.icon;
       return (

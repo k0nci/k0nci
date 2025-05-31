@@ -17,15 +17,14 @@ const MountainPortfolio: React.FC = () => {
           'linear-gradient(135deg, #2c3e50 0%, #4a69bd 20%, #3c6382 40%, #40739e 60%, #487eb0 80%, #5b73e8 100%)',
       }}
     >
-      <div className="relative flex h-screen items-center justify-center">
-        <AuroraBackground />
-        <TwinklingStars />
-        <MountainLayers />
-
-        <div className="animate-fadeInUp relative z-20 px-4 text-center">
-          <HeroTitle name={personalInfo.name} subtitle={personalInfo.subtitle} />
-          <TechStack technologies={technologies} />
-          <ActivityIcons activities={activities} />
+      {/* <AuroraBackground /> */}
+      <TwinklingStars />
+      <MountainLayers />
+      <div className="relative z-20 flex h-screen items-center justify-center">
+        <div className="animate-fadeInUp relative px-4 text-center">
+          <HeroTitle name={personalInfo.name} subtitle={personalInfo.subtitle} className="mb-14" />
+          <TechStack technologies={technologies} className="mb-14" />
+          <ActivityIcons activities={activities} className="mb-12" />
           <SocialLinks links={socialLinks} />
         </div>
       </div>

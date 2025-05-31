@@ -2,10 +2,11 @@ import React from 'react';
 
 interface TechStackProps {
   technologies: string[];
+  className?: string;
 }
 
-const TechStack: React.FC<TechStackProps> = ({ technologies }) => (
-  <div className="mb-14 flex flex-wrap justify-center gap-4 md:gap-10">
+const TechStack: React.FC<TechStackProps> = ({ technologies, className = '' }) => (
+  <div className={`${className} flex flex-wrap justify-center gap-4 md:gap-10`}>
     {technologies.map((tech) => (
       <div
         key={tech}
