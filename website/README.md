@@ -14,8 +14,8 @@ A personal portfolio website built with React, TypeScript, and Vite. Features a 
 
 ### Prerequisites
 
-- Node.js 20 or higher
-- npm or yarn
+- Node.js 20
+- npm
 
 ### Installation
 
