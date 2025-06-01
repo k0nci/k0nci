@@ -6,7 +6,7 @@ export interface PersonalInfo {
 }
 
 export interface ActivityItem {
-  emoji: string;
+  icon: IconType;
   title: string;
 }
 

@@ -1,5 +1,6 @@
 import { type PersonalInfo, type ActivityItem, type SocialLink } from '../types';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { PiPersonSimpleBike, PiPersonSimpleSnowboard, PiMountains } from 'react-icons/pi';
 
 export const personalInfo: PersonalInfo = {
   name: 'Matej Koncal',
@@ -9,9 +10,9 @@ export const personalInfo: PersonalInfo = {
 export const technologies = ['Backend', 'Cloud', 'Microservices', 'DevOps'];
 
 export const activities: ActivityItem[] = [
-  { emoji: '🚵‍♂️', title: 'Mountain Biking' },
-  { emoji: '🏂', title: 'Snowboarding' },
-  { emoji: '⛰️', title: 'Mountains' },
+  { icon: PiPersonSimpleBike, title: 'Mountain Biking' },
+  { icon: PiMountains, title: 'Mountains' },
+  { icon: PiPersonSimpleSnowboard, title: 'Snowboarding' },
 ];
 
 export const socialLinks: SocialLink[] = [
