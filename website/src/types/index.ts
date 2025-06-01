@@ -1,4 +1,4 @@
-import { type ComponentType, type SVGProps } from 'react';
+import { type IconType } from 'react-icons';
 
 export interface PersonalInfo {
   name: string;
@@ -13,7 +13,5 @@ export interface ActivityItem {
 export interface SocialLink {
   href: string;
   title: string;
-  icon: ComponentType<Icon>;
+  icon: IconType;
 }
-
-export type Icon = SVGProps<SVGSVGElement> & { size?: number };

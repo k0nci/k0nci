@@ -19,7 +19,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ links, className = '' }) => (
           title={link.title}
           className="text-white/80 transition-all duration-300 hover:-translate-y-2 hover:text-white hover:drop-shadow-lg"
         >
-          <IconComponent size={32} />
+          <IconComponent size={24} />
         </a>
       );
     })}
