@@ -16,12 +16,12 @@ export const activities: ActivityItem[] = [
 
 export const socialLinks: SocialLink[] = [
   {
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/k0nci',
     title: 'GitHub',
     icon: SiGithub,
   },
   {
-    href: 'https://linkedin.com/in/yourusername',
+    href: 'https://linkedin.com/in/mkoncal',
     title: 'LinkedIn',
     icon: SiLinkedin,
   },

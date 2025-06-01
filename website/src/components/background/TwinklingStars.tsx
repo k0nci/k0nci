@@ -4,7 +4,7 @@ const TwinklingStars: React.FC = () => {
   const stars = [
     { size: 'w-0.5 h-0.5', top: '20%', left: '20%', delay: '0s' },
     { size: 'w-1 h-1', top: '15%', left: '80%', delay: '1s' },
-    { size: 'w-0.5 h-0.5', top: '30%', left: '60%', delay: '2s' },
+    { size: 'w-0.5 h-0.5', top: '22%', left: '60%', delay: '2s' },
     { size: 'w-px h-px', top: '10%', left: '40%', delay: '0.5s' },
     { size: 'w-0.5 h-0.5', top: '25%', left: '90%', delay: '1.5s' },
   ];
