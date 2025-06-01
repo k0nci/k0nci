@@ -11,7 +11,7 @@ import { personalInfo, technologies, activities, socialLinks } from '../data/por
 const MountainPortfolio: React.FC = () => {
   return (
     <div
-      className="h-screen overflow-hidden font-sans text-white"
+      className="relative h-screen overflow-hidden font-sans text-white"
       style={{
         background:
           'linear-gradient(135deg, #2c3e50 0%, #4a69bd 20%, #3c6382 40%, #40739e 60%, #487eb0 80%, #5b73e8 100%)',
