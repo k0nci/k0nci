@@ -13,7 +13,8 @@ const TwinklingStars: React.FC = () => {
     <div className="absolute inset-0 overflow-hidden">
       {stars.map((star, index) => (
         <div
-          key={index}
+          // eslint-disable-next-line react-x/no-array-index-key
+          key={`star-${index}`}
           className={`absolute ${star.size} rounded-full bg-white/80`}
           style={{
             top: star.top,

@@ -1,6 +1,10 @@
 import React from 'react';
 
-const MountainLayers: React.FC = () => {
+interface MountainLayerProps {
+  className?: string;
+}
+
+const MountainLayers: React.FC<MountainLayerProps> = ({ className = '' }) => {
   const mountains = [
     {
       name: 'mountain-back',
@@ -23,7 +27,7 @@ const MountainLayers: React.FC = () => {
   ];
 
   return (
-    <div className="absolute bottom-0 left-0 z-10 h-1/2 w-full">
+    <div className={`${className} absolute bottom-0 left-0 h-1/2 w-full`}>
       {mountains.map((mountain) => (
         <div
           key={mountain.name}

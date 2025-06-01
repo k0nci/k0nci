@@ -8,9 +8,9 @@ interface ActivityIconsProps {
 
 const ActivityIcons: React.FC<ActivityIconsProps> = ({ activities, className = '' }) => (
   <div className={`${className} flex justify-center gap-8 md:gap-14`}>
-    {activities.map((activity, index) => (
+    {activities.map((activity) => (
       <div
-        key={index}
+        key={activity.title}
         title={activity.title}
         className="group relative flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border-2 border-white/15 bg-white/10 text-3xl backdrop-blur-sm transition-all duration-500 hover:scale-110 hover:bg-white/18 hover:shadow-2xl md:h-18 md:w-18 md:text-4xl"
       >

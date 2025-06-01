@@ -1,5 +1,5 @@
 import React from 'react';
-import AuroraBackground from './background/AuroraBackground';
+// import AuroraBackground from './background/AuroraBackground';
 import TwinklingStars from './background/TwinklingStars';
 import MountainLayers from './background/MountainLayers';
 import HeroTitle from './content/HeroTitle';
@@ -19,7 +19,7 @@ const MountainPortfolio: React.FC = () => {
     >
       {/* <AuroraBackground /> */}
       <TwinklingStars />
-      <MountainLayers />
+      <MountainLayers className="z-10" />
       <div className="relative z-20 flex h-screen items-center justify-center">
         <div className="animate-fadeInUp relative px-4 text-center">
           <HeroTitle name={personalInfo.name} subtitle={personalInfo.subtitle} className="mb-14" />

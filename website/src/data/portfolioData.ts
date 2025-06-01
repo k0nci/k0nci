@@ -1,6 +1,5 @@
 import { type PersonalInfo, type ActivityItem, type SocialLink } from '../types';
-import { SiGithub } from '@icons-pack/react-simple-icons';
-import LinkedInIcon from '../components/icons/LinkedInIcon';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 export const personalInfo: PersonalInfo = {
   name: 'Matej Koncal',
@@ -24,6 +23,6 @@ export const socialLinks: SocialLink[] = [
   {
     href: 'https://linkedin.com/in/yourusername',
     title: 'LinkedIn',
-    icon: LinkedInIcon,
+    icon: SiLinkedin,
   },
 ];
