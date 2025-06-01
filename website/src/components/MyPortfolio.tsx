@@ -28,6 +28,11 @@ const MountainPortfolio: React.FC = () => {
           <SocialLinks links={socialLinks} />
         </div>
       </div>
+
+      {/* Copyright notice */}
+      <div className="absolute right-4 bottom-2 z-30">
+        <p className="text-[0.5rem] text-white/60">Built by Matej Koncal with AI help • 2025</p>
+      </div>
     </div>
   );
 };
