@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # Version updates for website's npm
+  - package-ecosystem: "npm"
+    directory: "/website"
+    schedule:
+      interval: "yearly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "k0nci"
+    assignees:
+      - "k0nci"
+    commit-message:
+      prefix: "chore(deps-website)"
+
+  # Version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "yearly"
+    commit-message:
+      prefix: "chore(ci)"
