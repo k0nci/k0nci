@@ -1,7 +1,7 @@
 # Hi there! 👋 Welcome to my GitHub profile
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=monospace&size=28&duration=3000&pause=1000&color=3178c6&center=true&vCenter=true&width=600&lines=Backend+Development;Software+Architecture;Cloud+Infrastructure" alt="Skills SVG" />
+<div align="left">
+  <img src="https://readme-typing-svg.herokuapp.com?font=monospace&size=20&duration=3000&pause=400&color=3178c6&center=false&vCenter=true&width=400&height=120&multiline=true&lines=%24+whoami;Matej+Koncal;or+%2Fˈkɔntsi%2F;Software+Engineer+%7C+Architect" alt="Who am I SVG" />
 </div>
 
 ## 👨‍💻 About Me
