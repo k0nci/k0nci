@@ -43,5 +43,5 @@ I'm a passionate backend developer and software architect who loves designing sc
 ---
 
 <div align="center">
-  <i>Thanks for stopping by! 🚀</i>
+  <i>Thanks for stopping by! 🙃</i>
 </div>
