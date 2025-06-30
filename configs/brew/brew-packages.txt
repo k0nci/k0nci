@@ -1,0 +1,5 @@
+age
+awscli
+go
+zsh
+zsh-completions

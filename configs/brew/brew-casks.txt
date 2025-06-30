@@ -1,0 +1,4 @@
+anaconda
+dbeaver-community
+google-cloud-sdk
+rectangle
