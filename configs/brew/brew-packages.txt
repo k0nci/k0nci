@@ -1,5 +1,8 @@
 age
 awscli
+bat
+eza
 go
+nvm
 zsh
 zsh-completions

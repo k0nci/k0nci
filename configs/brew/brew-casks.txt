@@ -1,4 +1,4 @@
 anaconda
 dbeaver-community
-google-cloud-sdk
+gcloud-cli
 rectangle
