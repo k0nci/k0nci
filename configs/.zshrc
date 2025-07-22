@@ -73,6 +73,9 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Custom config for eza plugin
+zstyle ':omz:plugins:eza' 'icons' yes
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -80,6 +83,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	aws
+  eza
   gcloud
 	docker
 	git
@@ -129,8 +133,7 @@ if type brew &>/dev/null; then
     compinit
 fi
 
-# Manually added for eza and bat
-alias ls="eza --icons"
+# Manually added for bat
 alias cat="bat --style=auto"
 
 # Manually added based on nvm
