@@ -13,7 +13,8 @@ import type { ProfilePage, WithContext } from 'schema-dts';
 const personalInfo: PersonalInfo = {
   name: 'Matej Koncal',
   subtitle: 'Software Engineer & Mountain Enthusiast',
-  description: 'Software Engineer specializing in Backend, Cloud, and DevOps. Mountain enthusiast from Slovakia.'
+  description:
+    'Software Engineer specializing in Backend, Cloud, and DevOps. Mountain enthusiast from Slovakia.',
 };
 
 const technologies = ['Backend', 'Cloud', 'Architecture', 'DevOps'];
@@ -53,10 +54,13 @@ const seoStructuredData: WithContext<ProfilePage> = {
     knowsAbout: ['Backend Development', 'Cloud Computing', 'Software Architecture'],
   },
 };
-
 ---
 
-<BaseLayout title={`${personalInfo.name} | Personal Website`} description={personalInfo.description} structuredData={seoStructuredData}>
+<BaseLayout
+  title={`${personalInfo.name} | Personal Website`}
+  description={personalInfo.description}
+  structuredData={seoStructuredData}
+>
   <div
     class="relative h-screen overflow-hidden font-sans text-white"
     style="background: linear-gradient(135deg, #2c3e50 0%, #4a69bd 20%, #3c6382 40%, #40739e 60%, #487eb0 80%, #5b73e8 100%);"
@@ -74,7 +78,7 @@ const seoStructuredData: WithContext<ProfilePage> = {
     </div>
 
     <!-- Copyright notice -->
-    <div class="absolute bottom-2 right-4 z-30">
+    <div class="absolute right-4 bottom-2 z-30">
       <p class="text-[0.5rem] text-white/60">Built by k0nci with AI help • 2025</p>
     </div>
   </div>

@@ -21,7 +21,10 @@ const { title, description, ogImage = '/og-image.png', structuredData } = Astro.
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="Matej Koncal, Software Engineer, Backend Developer, Cloud Engineer, DevOps, Slovakia Developer" />
+    <meta
+      name="keywords"
+      content="Matej Koncal, Software Engineer, Backend Developer, Cloud Engineer, DevOps, Slovakia Developer"
+    />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Facebook -->
@@ -32,7 +35,11 @@ const { title, description, ogImage = '/og-image.png', structuredData } = Astro.
     <meta property="og:image" content={ogImage} />
 
     <!-- Structured Data -->
-    {structuredData && <script type="application/ld+json" set:html={JSON.stringify(structuredData)} is:inline />}
+    {
+      structuredData && (
+        <script type="application/ld+json" set:html={JSON.stringify(structuredData)} is:inline />
+      )
+    }
   </head>
   <body>
     <slot />
