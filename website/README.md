@@ -1,40 +1,75 @@
-# Personal Portfolio Website
+# Website Astro
 
-A personal portfolio website built with React, TypeScript, and Vite. Features a mountain-themed design with twinkling stars.
-
-## 🌟 Features
-
-- **Tech Stack**: React + TypeScript + Vite
-- **Tech Stack Showcase**: Display of technologies and skills
-- **Activity Icons**: Visual representation of interests and hobbies
-- **Social Links**: Easy access to social media profiles
-- **Clean Code**: ESLint + TypeScript for code quality
+Personal portfolio website built with Astro, React, and Tailwind CSS.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 22
-- npm
+- Node.js 18+
+- npm or pnpm
 
 ### Installation
-
-1. Clone the repository and navigate to the website folder:
-
-```bash
-cd website
-```
-
-2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Start the development server:
+### Development
 
 ```bash
 npm run dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
+Visit `http://localhost:4321` to see the website.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 🛠️ Tech Stack
+
+- **Astro** - Static site generator
+- **React** - UI components (with client-side hydration)
+- **Tailwind CSS** - Styling
+- **TypeScript** - Type safety
+- **React Icons** - Icon library
+
+## 📁 Project Structure
+
+```
+website-astro/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # React components
+│   │   ├── background/  # Background components
+│   │   └── content/     # Content components
+│   ├── data/           # Data files
+│   ├── pages/          # Astro pages (routes)
+│   ├── styles/         # Global styles
+│   └── types/          # TypeScript types
+├── astro.config.mjs    # Astro configuration
+├── package.json
+└── tsconfig.json
+```
+
+## 🎨 Features
+
+- Responsive design
+- SEO optimized with structured data
+- Mountain-themed background with animations
+- Smooth animations and transitions
+- Social media links
+- Tech stack display
+
+## 📝 License
+
+Personal project - © 2025 Matej Koncal
