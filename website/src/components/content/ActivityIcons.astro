@@ -10,7 +10,7 @@ interface Props {
 const { activities, class: className = '' } = Astro.props;
 ---
 
-<div id="content-wrapper" class={`${className} flex justify-center gap-8 md:gap-14`}>
+<div class={`${className} flex justify-center gap-8 md:gap-14`}>
   {
     activities.map((activity) => {
       return (
