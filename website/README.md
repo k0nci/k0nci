@@ -1,75 +1,40 @@
-# Website Astro
+# Personal Portfolio Website
 
-Personal portfolio website built with Astro, React, and Tailwind CSS.
+A personal portfolio website built with Astro, TypeScript, and Tailwind CSS. Features a mountain-themed design with twinkling stars.
+
+## 🌟 Features
+
+- Tech Stack: Astro + TypeScript + Tailwind CSS
+- Tech Stack Showcase: Display of technologies and skills
+- Activity Icons: Visual representation of interests and hobbies
+- Social Links: Easy access to social media profiles
+- Clean Code: ESLint + TypeScript for code quality
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
-- npm or pnpm
+- npm
 
 ### Installation
 
-```bash
-npm install
-```
+1. Clone the repository and navigate to the website folder:
 
-### Development
+   ```bash
+   cd website
+   ```
 
-```bash
-npm run dev
-```
+2. Install dependencies:
 
-Visit `http://localhost:4321` to see the website.
+   ```bash
+   npm install
+   ```
 
-### Build
+3. Start the development server:
 
-```bash
-npm run build
-```
+   ```bash
+   npm run dev
+   ```
 
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
-## 🛠️ Tech Stack
-
-- **Astro** - Static site generator
-- **React** - UI components (with client-side hydration)
-- **Tailwind CSS** - Styling
-- **TypeScript** - Type safety
-- **React Icons** - Icon library
-
-## 📁 Project Structure
-
-```
-website-astro/
-├── public/              # Static assets
-├── src/
-│   ├── components/      # React components
-│   │   ├── background/  # Background components
-│   │   └── content/     # Content components
-│   ├── data/           # Data files
-│   ├── pages/          # Astro pages (routes)
-│   ├── styles/         # Global styles
-│   └── types/          # TypeScript types
-├── astro.config.mjs    # Astro configuration
-├── package.json
-└── tsconfig.json
-```
-
-## 🎨 Features
-
-- Responsive design
-- SEO optimized with structured data
-- Mountain-themed background with animations
-- Smooth animations and transitions
-- Social media links
-- Tech stack display
-
-## 📝 License
-
-Personal project - © 2025 Matej Koncal
+4. Open your browser and visit `http://localhost:4321`
