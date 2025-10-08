@@ -1,23 +1,12 @@
-import { getAssetFromKV } from '@cloudflare/kv-asset-handler';
-
+/*
+Cloudflare Workers fetch handler.
+This worker code is executed only if a static asset is missing from the CDN.
+Reference: https://developers.cloudflare.com/workers/static-assets/#routing-behavior
+When triggered, it redirects all requests to the origin root path.
+*/
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request) {
     const url = new URL(request.url);
-
-    try {
-      // Try to fetch the static asset
-      return await getAssetFromKV(
-        {
-          request,
-          waitUntil: ctx.waitUntil.bind(ctx),
-        },
-        {
-          ASSET_NAMESPACE: env.__STATIC_CONTENT,
-          ASSET_MANIFEST: JSON.parse(env.__STATIC_CONTENT_MANIFEST),
-        }
-      );
-    } catch (e) {
-      return Response.redirect(url.origin + '/', 301);
-    }
+    return Response.redirect(url.origin + '/', 301);
   },
 };
