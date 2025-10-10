@@ -1,4 +1,5 @@
 anaconda
 dbeaver-community
 gcloud-cli
+maccy
 rectangle
