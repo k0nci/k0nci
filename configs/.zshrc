@@ -134,7 +134,7 @@ if type brew &>/dev/null; then
 fi
 
 # Manually added for bat
-alias cat="bat --style=auto"
+alias cat="bat --style=auto --paging=never"
 
 # Manually added based on nvm
 export NVM_DIR="$HOME/.nvm"
