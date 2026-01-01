@@ -8,7 +8,7 @@
 
 I'm a passionate backend developer and software architect who loves designing scalable systems and building robust infrastructure around them. I believe in analyzing and understanding problems first, then incrementally evolving the solution as the application grows.
 
-- 🔭 I enjoy solving real-world complex problems
+- 🔭 I enjoy solving complex real-world problems
 - 🚀 I prefer working in small, fast-moving environments
 - 🏗️ I'm passionate about software architecture, efficient data storage, and resilient infrastructure
 - 🌱 I'm always excited about new backend technologies and architectural patterns
