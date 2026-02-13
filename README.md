@@ -12,7 +12,7 @@ I'm a passionate backend developer and software architect who loves designing sc
 - 🚀 I prefer working in small, fast-moving environments
 - 🏗️ I'm passionate about software architecture, efficient data storage, and resilient infrastructure
 - 🌱 I'm always excited about new backend technologies and architectural patterns
-- 📫 How to reach me: [matej@k0nci.cloud](mailto:matej@k0nci.cloud)
+- 📫 How to reach me: [hello@k0nci.me](mailto:hello@k0nci.me)
 
 ## 🛠️ Tech Stack
 
