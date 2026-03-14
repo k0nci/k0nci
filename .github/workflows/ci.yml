@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      website: ${{ steps.filter.outputs.website }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            website: 'website/**'
+
+  website-ci:
+    needs: detect
+    if: needs.detect.outputs.website == 'true'
+    uses: ./.github/workflows/website-ci.yml
+
+  ci-ok:
+    name: CI OK
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [website-ci]
+    steps:
+      - name: Verify results
+        run: |
+          if [[ "${{ needs.website-ci.result }}" == "failure" ]]; then
+            exit 1
+          fi
