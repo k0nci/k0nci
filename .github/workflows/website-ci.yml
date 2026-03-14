@@ -1,14 +1,7 @@
 name: website-ci
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "website/**"
-  pull_request:
-    branches: [main]
-    paths:
-      - "website/**"
+  workflow_call:
 
 env:
   NODE_VERSION: "22"
