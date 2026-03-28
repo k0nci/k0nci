@@ -4,8 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a personal GitHub profile repo (k0nci) containing:
-- **`website/`** — Personal portfolio site (k0nci.me). See `website/CLAUDE.md` for details.
+This is a personal GitHub profile repo containing:
+
+- **`website/`** — Personal portfolio site. See `website/CLAUDE.md` for details.
 - **`configs/`** — macOS development environment configs (zsh, Homebrew package lists, iTerm2 setup).
 - **Root `README.md`** — GitHub profile README.
 
