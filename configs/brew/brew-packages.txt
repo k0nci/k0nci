@@ -3,6 +3,7 @@ awscli
 bat
 eza
 go
+jq
 nvm
 zsh
 zsh-completions
